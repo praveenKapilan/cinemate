@@ -10,7 +10,7 @@ export const MovieDetail = () => {
   const[movie, setMovie] = useState({});
 
   const image = movie.poster_path ?`https://image.tmdb.org/t/p/w500${movie.poster_path}` : Backup;
-
+//eslint-disable-next-line
   const pageTitle = useTitle(movie.title);
 
 
@@ -23,7 +23,7 @@ export const MovieDetail = () => {
       console.log(json);      
     }
     fetchMovie();
-  },[]);
+  },[params.id]);
 
   return (
     <main>
@@ -93,7 +93,7 @@ export const MovieDetail = () => {
           
           <p className="my-4">
             <span className="mr-2 font-bold">IMDB Code: </span>
-            <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target="_blank" rel="noreffer">{movie.imdb_id}</a>
+            <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target="_blank" rel="noreffer noreferrer">{movie.imdb_id}</a>
           </p>
 
         </div>
