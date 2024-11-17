@@ -13,24 +13,24 @@ export const Footer = () => {
           </span>
           <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
-              <Link to="#"  target="_blank" className="hover:underline me-4 md:me-6">
+              <p className="hover:underline me-4 md:me-6">
                 About
-              </Link>
+              </p>
             </li>
             <li>
-              <Link to="#" target="_blank" className="hover:underline me-4 md:me-6">
+              <p className="hover:underline me-4 md:me-6">
                 Privacy Policy
-              </Link>
+              </p>
             </li>
             <li>
-              <Link to="#" target="_blank" className="hover:underline me-4 md:me-6">
+              <p className="hover:underline me-4 md:me-6">
                 Licensing
-              </Link>
+              </p>
             </li>
             <li>
-              <Link to="#" target="_blank" className="hover:underline">
+              <p className="hover:underline">
                 Contact
-              </Link>
+              </p>
             </li>
           </ul>
         </div>

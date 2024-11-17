@@ -5,6 +5,7 @@ import { useTitle } from "../hooks/useTitle";
 export const MovieList = ({apiPath}) => {
 
   const { data : movies } = useFetch(apiPath);
+  //eslint-disable-next-line
   const pageTitle = useTitle('title');
 
   return (
